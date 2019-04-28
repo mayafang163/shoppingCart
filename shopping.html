@@ -1,0 +1,69 @@
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>购物车客户端计算</title>
+      <meta charset="utf-8" />
+    <style>
+      table{width:600px; text-align:center;
+        border-collapse:collapse;
+      }
+      td,th{border:1px solid black}
+      td[colspan="3"]{text-align:right;}
+      /*设置id为data的table的tbody中每行最后一个td背景为红色*/
+      table#data>tbody td:last-child{background:#efefef}   
+      /*设置id为data的table的tfoot中最后一个td背景为绿色*/
+      table#data>tfoot td:last-child{background:#7CD3EF}
+    </style>
+  </head>
+  <body>
+    <table id="data">
+      <thead>
+        <tr>
+          <th>商品名称</th>
+          <th>单价</th>
+          <th>数量</th>
+          <th>小计</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>咖啡</td>
+          <td>&yen;35</td>
+          <td>
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </td>
+          <td>&yen;35</td>
+        </tr>
+        <tr>
+          <td>甜品</td>
+          <td>&yen;43</td>
+          <td>
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+          </td>
+          <td>&yen;43</td>
+        </tr>
+        <tr>
+          <td>饮料</td>
+          <td>&yen;19</td>
+          <td>
+              <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </td>
+          <td>&yen;19</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total: </td>
+          <td>&yen;97</td>
+        </tr>
+      </tfoot>
+    </table>
+    <script src="shopping.js"></script>
+  </body>
+</html>
